@@ -1,6 +1,8 @@
 // import Image from 'next/image';
 import Head from "next/head";
 import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import ProjectsSection from '@/components/ProjectsSection';
 
 export default function Home() {
   return (
@@ -15,6 +17,20 @@ export default function Home() {
 
       <main>
         <Navigation />
+        <Hero />
+        {/* <div className="flex items-center justify-center">
+          {" "}
+          <a className="link" href="#projects">
+            <span className="link__arrow">
+              <span></span>
+              <span></span>
+            </span>
+            <span className="link__line"></span>
+            <span className="link__text text-2xl md:text-[2rem] lg:text-[2rem]">Projects</span>
+          </a>
+        </div>
+        <div id="projects" className="w-full h-[500px] b-gray-500"></div> */}
+        <ProjectsSection />
       </main>
     </>
   );

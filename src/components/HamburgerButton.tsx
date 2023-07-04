@@ -6,7 +6,7 @@ interface HamburgerButtonProps {
 }
 
 const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, setIsOpen }) => {
-  const genericHamburgerLine = `h-1 w-7 my-[2px] rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-[3px] w-7 my-[2px] rounded-full bg-black transition ease transform duration-300`;
 
   return (
     <button
@@ -28,7 +28,7 @@ const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, setIsOpen }) 
       <div
         className={`${genericHamburgerLine} ${
           isOpen
-            ? "-rotate-[44deg] -translate-y-[0.55rem] opacity-50 group-hover:opacity-100"
+            ? "-rotate-[45deg] -translate-y-[0.45rem] opacity-50 group-hover:opacity-100"
             : "opacity-50 group-hover:opacity-100"
         }`}
       />
