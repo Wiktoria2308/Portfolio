@@ -40,7 +40,7 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="#projects-section"
                 className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white text-right"
               >
                 Projects
