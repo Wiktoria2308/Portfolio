@@ -122,6 +122,7 @@ color:rgb(75, 85, 99)
   transition: all 0.3s ease-in-out;
 }
 .project-website, .project-code {
+  border-radius: 0.25rem;
   width: 100%;
   font-size: 13pt;
   padding: 5px 20px;

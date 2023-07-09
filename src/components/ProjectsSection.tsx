@@ -3,6 +3,8 @@ import { useRef, useEffect, useState } from "react";
 const ProjectsSection: React.FC = () => {
   const projectRefs = useRef<Array<HTMLDivElement | null>>([]);
 
+  console.log(projectRefs)
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2,
@@ -46,7 +48,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <div
       id="projects-section"
-      className="bg-[#f5f5f5] pt-[4rem] pb-[6rem] px-4 sm:px-6 lg:px-8"
+      className="bg-[#f5f5f5] pt-[5rem] pb-[6rem] px-4 sm:px-6 lg:px-8"
     >
          <div className="flex items-center justify-center mb-20">
         <hr className="border-gray-500 border-t w-1/12 my-1 mr-4" />
@@ -182,6 +184,11 @@ const ProjectsSection: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="text-center">
+          <a href="https://github.com/Wiktoria2308" target="_blank" className="text-2xl underline pointer">
+          More Projects{" "}
+          </a>
       </div>
     </div>
   );
