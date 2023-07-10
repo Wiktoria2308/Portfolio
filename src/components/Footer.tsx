@@ -4,14 +4,14 @@ import { HiChevronDoubleUp } from "react-icons/hi";
 
 const Footer: React.FC = () => {
 
-    const [showScrollToTop, setShowScrollToTop] = useState(false);
+    const [showScrollToTop, setShowScrollToTop] = useState<boolean>(false);
 
-    const handleScrollToTop = () => {
+    const handleScrollToTop = (): void => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
   
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
+    const handleScroll = (): void => {
+      const scrollTop: number = window.scrollY;
   
       if (scrollTop > 200) {
         setShowScrollToTop(true);

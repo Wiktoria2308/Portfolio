@@ -8,11 +8,11 @@ const Hero: React.FC = () => {
   const [isHeading2Finished, setIsHeading2Finished] = useState<boolean>(false);
 
   useEffect(() => {
-    const headingText = "Hello, I'm";
-    let headingIndex = 0;
-    let currentHeading = "";
+    const headingText: string = "Hello, I'm";
+    let headingIndex: number = 0;
+    let currentHeading: string = "";
 
-    const headingTimer = setInterval(() => {
+    const headingTimer: NodeJS.Timeout = setInterval(() => {
       if (headingIndex < headingText.length) {
         currentHeading += headingText[headingIndex];
         setHeading(currentHeading);
@@ -28,11 +28,11 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     if (isHeadingFinished) {
-      const headingText = "Wiktoria Dobrzewinska";
-      let headingIndex = 0;
-      let currentHeading = "";
+      const headingText: string = "Wiktoria Dobrzewinska";
+      let headingIndex: number = 0;
+      let currentHeading: string = "";
 
-      const headingTimer = setInterval(() => {
+      const headingTimer: NodeJS.Timeout = setInterval(() => {
         if (headingIndex < headingText.length) {
           currentHeading += headingText[headingIndex];
           setHeading2(currentHeading);
@@ -49,17 +49,17 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     if (isHeading2Finished) {
-      const paragraphText = "I'm frontend developer";
+      const paragraphText: string = "I'm a frontend developer";
       setParagraph(paragraphText);
     }
   }, [isHeading2Finished]);
   
-  const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
-    const targetId = event.currentTarget.getAttribute('href');
-    const targetElement = targetId ? document.querySelector(targetId) : null;
+    const targetId: string | null = event.currentTarget.getAttribute("href");
+    const targetElement: Element | null = targetId ? document.querySelector(targetId) : null;
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
               {paragraph}
             </p>
           )}
-          <a href="#projects-section" className="arrow-container" onClick={handleSmoothScroll}>
+          <a href="#aboutme" className="arrow-container" onClick={handleSmoothScroll}>
             <div className="arrow"></div>
             <div className="arrow"></div>
             <div className="arrow"></div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMeSection: React.FC = () => {
   return (
-    <section className="bg-gray-200 pt-20 pb-32">
+    <div className="bg-gray-200 pt-20 pb-32" id="aboutme">
       <div className="container mx-auto px-4">
       <div className="flex items-center justify-center mb-20">
         <hr className="border-gray-500 border-t w-1/12 my-1 mr-4" />
@@ -30,7 +30,7 @@ const AboutMeSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

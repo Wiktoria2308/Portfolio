@@ -3,8 +3,6 @@ import { useRef, useEffect, useState } from "react";
 const ProjectsSection: React.FC = () => {
   const projectRefs = useRef<Array<HTMLDivElement | null>>([]);
 
-  console.log(projectRefs)
-
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2,
