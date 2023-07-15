@@ -64,11 +64,10 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen relative">
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
-
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl lg:text-[3rem] font-normal mb-1 text-gray-600 fade-in">
@@ -91,7 +90,7 @@ const Hero: React.FC = () => {
             <div className="arrow"></div>
           </a>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

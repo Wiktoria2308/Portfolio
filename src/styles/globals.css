@@ -9,6 +9,13 @@
 html {
   font-family: "Cormorant Garamond", serif;
   background-color: white;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 
