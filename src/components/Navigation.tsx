@@ -64,7 +64,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`relative z-10 sticky top-0 ${
+      className={`z-10 w-full top-0 fixed ${
         isScrolled ? "bg-white shadow" : "bg-transparent"
       }`}
     >

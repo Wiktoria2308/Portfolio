@@ -62,7 +62,7 @@ const ProjectsSection: React.FC = () => {
           data-index={0}
         >
           {" "}
-          <div className="w-[60%]">
+          <div className="lg:w-[60%] md:px-4">
             <img
               src="/eco-plants.png"
               alt="Project Eco Plants"
@@ -80,11 +80,11 @@ const ProjectsSection: React.FC = () => {
             </div>
             )}
           </div>
-          <div className="project-info">
+          <div className="lg:ml-[40px] ml-[10px]">
             <div className="w-full overflow-hidden">
-              <p className="text-center project-name">Eco Plants</p>
-              <a href="https://eco-plants.netlify.app" target="_blank"><div className="text-center project-website">Website</div></a>
-             <a href="https://github.com/Wiktoria2308/Eco-Plants" target="_blank"> <div className="text-center project-code">Code</div></a>
+              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Eco Plants</p>
+              <a href="https://eco-plants.netlify.app" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a>
+             <a href="https://github.com/Wiktoria2308/Eco-Plants" target="_blank"> <div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ const ProjectsSection: React.FC = () => {
           className="project-container w-full md:w-1/2"
           data-index={1}
         >
-          <div className="w-[60%]">
+          <div className="lg:w-[60%] md:px-4">
             <img
               src="/tasty-malmo.png"
               alt="Project Tasty Malmo"
@@ -111,11 +111,11 @@ const ProjectsSection: React.FC = () => {
              )}
           </div>
 
-          <div className="project-info">
+          <div className="lg:ml-[40px] ml-[10px]">
             <div className="w-full overflow-hidden">
-              <p className="text-center project-name">Tasty Malmö</p>
-             <a href="https://tasty-malmo.netlify.app/" target="_blank"><div className="text-center project-website">Website</div></a> 
-             <a href="https://github.com/Wiktoria2308/Restaurant-Cafe-Map-App" target="_blank"> <div className="text-center project-code">Code</div></a>
+              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Tasty Malmö</p>
+             <a href="https://tasty-malmo.netlify.app/" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a> 
+             <a href="https://github.com/Wiktoria2308/Restaurant-Cafe-Map-App" target="_blank"> <div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ const ProjectsSection: React.FC = () => {
           className="project-container w-full md:w-1/2"
           data-index={2}
         >
-          <div className="w-[60%]">
+          <div className="lg:w-[60%] md:px-4">
             {" "}
             <img
               src="/movie-db.png"
@@ -143,11 +143,11 @@ const ProjectsSection: React.FC = () => {
              )}
           </div>
 
-          <div className="project-info">
+          <div className="lg:ml-[40px] ml-[10px]">
             <div className="w-full overflow-hidden">
-              <p className="text-center project-name">Movie DB</p>
-              <a href="https://wiktoria-movie-db-api.netlify.app/" target="_blank"><div className="text-center project-website">Website</div></a>
-              <a href="https://github.com/Wiktoria2308/TheMovieDB" target="_blank"><div className="text-center project-code">Code</div></a>
+              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Movie DB</p>
+              <a href="https://wiktoria-movie-db-api.netlify.app/" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a>
+              <a href="https://github.com/Wiktoria2308/TheMovieDB" target="_blank"><div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@ const ProjectsSection: React.FC = () => {
           className="project-container w-full md:w-1/2"
           data-index={3}
         >
-          <div className="w-[60%]">
+          <div className="lg:w-[60%] md:px-4">
             {" "}
             <img src="/almi.png" alt="Project Almi" 
           className={`project-image ${hoveredIndex === 3 ? "hovered" : ""}`}
@@ -174,11 +174,11 @@ const ProjectsSection: React.FC = () => {
              )}
           </div>
 
-          <div className="project-info">
+          <div className="lg:ml-[40px] ml-[10px]">
             <div className="w-full overflow-hidden">
-              <p className="text-center project-name">Almi</p>
-              <a href="https://my-version-of-almi-company.netlify.app/" target="_blank"><div className="text-center project-website">Website</div></a>
-              <a href="https://github.com/Wiktoria2308/Almi" target="_blank"><div className="text-center project-code">Code</div></a>
+              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Almi</p>
+              <a href="https://my-version-of-almi-company.netlify.app/" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a>
+              <a href="https://github.com/Wiktoria2308/Almi" target="_blank"><div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
             </div>
           </div>
         </div>

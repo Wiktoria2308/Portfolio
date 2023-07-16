@@ -131,16 +131,13 @@ color:rgb(75, 85, 99)
 .project-website, .project-code {
   border-radius: 0.25rem;
   width: 100%;
-  font-size: 13pt;
   padding: 5px 20px;
 }
 .project-website:hover, .project-code:hover, .email-button:hover{
   background: var(--fuchsia);
   color: #fff;
 }
-.project-website {
-  margin-bottom: 20px;
-}
+
 .project-container.animate-right {
   animation: fadeInRight 0.5s ease-out forwards;
 }
@@ -149,14 +146,7 @@ color:rgb(75, 85, 99)
   animation: fadeInLeft 0.5s ease-out forwards;
 }
 
-.project-name {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
 
-.project-info {
-  margin-left: 40px; 
-}
 .project-image {
   border-radius: 10px;
   position: relative;

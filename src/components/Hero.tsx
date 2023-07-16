@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center translate-y-[-5%]">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl lg:text-[3rem] font-normal mb-1 text-gray-600 fade-in">
             {heading}{" "}

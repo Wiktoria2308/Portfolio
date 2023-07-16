@@ -76,7 +76,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#c7cdd6] pt-10 pb-20" id="contact">
+    <div className="bg-[#c7cdd6] pt-10 pb-20 max-[767px]:px-4" id="contact">
       <div className="flex items-center justify-center mb-10">
         <hr className="border-gray-500 border-t w-1/12 my-1 mr-4" />
         <h2 className="text-3xl text-center">
