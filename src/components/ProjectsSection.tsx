@@ -88,38 +88,7 @@ const ProjectsSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div
-          ref={(ref) => (projectRefs.current[1] = ref)}
-          className="project-container w-full md:w-1/2"
-          data-index={1}
-        >
-          <div className="lg:w-[60%] md:px-4">
-            <img
-              src="/tasty-malmo.png"
-              alt="Project Tasty Malmo"
-              className={`project-image ${hoveredIndex === 1 ? "hovered" : ""}`}
-              onMouseOver={() => handleMouseOver(1)}
-            />
-            {hoveredIndex === 1 && (
-            <div className="overlay" onMouseLeave={handleMouseLeave}
-            >
-              <div className="overlay-content px-2">
-              <p className="text-2xl font-bold mb-2">Tools used:</p>
-                <p className="text-xl">React JS / React Router / Firebase / Google Maps API / Axios / Bootstrap / React Testing Library / React Dropzone</p>
-              </div>
-            </div>
-             )}
-          </div>
-
-          <div className="lg:ml-[40px] ml-[10px]">
-            <div className="w-full overflow-hidden">
-              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Tasty Malmö</p>
-             <a href="https://tasty-malmo.netlify.app/" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a> 
-             <a href="https://github.com/Wiktoria2308/Restaurant-Cafe-Map-App" target="_blank"> <div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
-            </div>
-          </div>
-        </div>
-        <div
+            <div
           ref={(ref) => (projectRefs.current[2] = ref)}
           className="project-container w-full md:w-1/2"
           data-index={2}
@@ -151,6 +120,38 @@ const ProjectsSection: React.FC = () => {
             </div>
           </div>
         </div>
+        <div
+          ref={(ref) => (projectRefs.current[1] = ref)}
+          className="project-container w-full md:w-1/2"
+          data-index={1}
+        >
+          <div className="lg:w-[60%] md:px-4">
+            <img
+              src="/tasty-malmo.png"
+              alt="Project Tasty Malmo"
+              className={`project-image ${hoveredIndex === 1 ? "hovered" : ""}`}
+              onMouseOver={() => handleMouseOver(1)}
+            />
+            {hoveredIndex === 1 && (
+            <div className="overlay" onMouseLeave={handleMouseLeave}
+            >
+              <div className="overlay-content px-2">
+              <p className="text-2xl font-bold mb-2">Tools used:</p>
+                <p className="text-xl">React JS / React Router / Firebase / Google Maps API / Axios / Bootstrap / React Testing Library / React Dropzone</p>
+              </div>
+            </div>
+             )}
+          </div>
+
+          <div className="lg:ml-[40px] ml-[10px]">
+            <div className="w-full overflow-hidden">
+              <p className="text-center lg:mb-[20px] mb-[10px] lg:text-[25px] text-[18px]">Tasty Malmö</p>
+             <a href="https://tasty-malmo.netlify.app/" target="_blank"><div className="text-center project-website text-[14px] lg:text-[17px] lg:mb-[20px] mb-[10px]">Website</div></a> 
+             <a href="https://github.com/Wiktoria2308/Restaurant-Cafe-Map-App" target="_blank"> <div className="text-center project-code text-[14px] lg:text-[17px]">Code</div></a>
+            </div>
+          </div>
+        </div>
+    
         <div
           ref={(ref) => (projectRefs.current[3] = ref)}
           className="project-container w-full md:w-1/2"
