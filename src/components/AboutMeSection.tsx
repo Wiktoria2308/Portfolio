@@ -19,7 +19,7 @@ const AboutMeSection: React.FC = () => {
           </div>
           <div className="md:w-1/2 md:pl-12">
             <p className="text-[1.4rem] text-gray-600 leading-relaxed mb-6">
-              Hey there! I'm a frontend developer with a passion for creating modern and interactive web experiences. I specialize in JavaScript, HTML, CSS, and popular frameworks like React and Next.js.
+              Hey there! I'm a frontend developer with a passion for creating modern and interactive web experiences. I specialize in JavaScript, Typescript, HTML, CSS and popular frameworks like React, Tailwind, Next.js and more.
             </p>
             <p className="text-[1.4rem] text-gray-600 leading-relaxed mb-6">
               I believe in the power of code to bring ideas to life. I'm constantly exploring new technologies and staying up-to-date with the latest trends to deliver cutting-edge solutions. My goal is to build intuitive user interfaces that provide a seamless and enjoyable experience for users.

@@ -148,26 +148,22 @@ color:rgb(75, 85, 99)
 
 
 .project-image {
-  border-radius: 10px;
   position: relative;
 }
 
-.project-image.hovered {
-  opacity: 0.5;
-}
 
 .overlay {
   opacity: 1;
   position: absolute;
   top: 0;
-  width: 60%;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .overlay-content {
