@@ -64,11 +64,15 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`z-10 w-full top-0 fixed ${
-        isScrolled ? "bg-white shadow" : "bg-transparent"
-      }`}
+      className={`z-10 w-full top-0 fixed ${isScrolled ? "bg-white shadow dark:bg-gray-900" : "bg-transparent"
+        }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+      <div
+        className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 ${isMenuOpen && typeof window !== "undefined" && window.innerWidth < 768
+            ? "bg-white dark:bg-gray-900"
+            : ""
+          }`}
+      >
         <Link href="/" className="flex items-center">
           <img src="/logo.png" className="h-10" alt="Logo" />
         </Link>
@@ -78,11 +82,11 @@ const Navigation: React.FC = () => {
           className={isMenuOpen ? "block w-full" : "hidden"}
           id="navbar-hamburger"
         >
-          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md text-[1.5rem]">
+          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md text-[1.5rem] dark:text-white">
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
                 aria-current="page"
               >
                 Home
@@ -91,7 +95,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#aboutme"
-                className="block py-2 pl-7 pr-4 hover:bg-gray-100 text-right"
+                className="block py-2 pl-7 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
                 onClick={handleSmoothScroll}
               >
                 About me
@@ -100,7 +104,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#projects-section"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
                 onClick={handleSmoothScroll}
               >
                 Projects
@@ -109,7 +113,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#contact"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
                 onClick={handleSmoothScroll}
               >
                 Contact
