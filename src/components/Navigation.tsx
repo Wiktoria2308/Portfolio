@@ -78,11 +78,11 @@ const Navigation: React.FC = () => {
           className={isMenuOpen ? "block w-full" : "hidden"}
           id="navbar-hamburger"
         >
-          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md dark:bg-gray-300 dark:border-gray-700 text-[1.5rem]">
+          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md text-[1.5rem]">
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 rounded-tl-lg rounded-tr-lg pr-4 hover:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white text-right border-b"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
                 aria-current="page"
               >
                 Home
@@ -91,7 +91,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#aboutme"
-                className="block py-2 pl-7 pr-4 hover:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white text-right border-b"
+                className="block py-2 pl-7 pr-4 hover:bg-gray-100 text-right"
                 onClick={handleSmoothScroll}
               >
                 About me
@@ -100,7 +100,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#projects-section"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 dark:text-gray-700 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white text-right border-b"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
                 onClick={handleSmoothScroll}
               >
                 Projects
@@ -109,7 +109,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#contact"
-                className="block py-2 pl-3 pr-4 rounded-bl-lg rounded-br-lg hover:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white text-right border-b"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right"
                 onClick={handleSmoothScroll}
               >
                 Contact
