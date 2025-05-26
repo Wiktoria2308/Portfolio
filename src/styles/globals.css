@@ -112,6 +112,21 @@ color:rgb(75, 85, 99)
   top: 75%;
 }
 
+
+@media (max-width: 768px) {
+  .arrow-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrow:before,
+  .arrow:after {
+    height: 30px;
+    width: 3px;
+  }
+}
+
+
 .project-container {
   display: flex;
   flex-direction: column;

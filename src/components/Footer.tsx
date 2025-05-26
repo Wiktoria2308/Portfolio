@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <div className="text-center mt-8">
-          <p className="text-lg tracking-wide"><span className="uppercase text-gray-700">Wiktoria Dobrzewinska </span><span className="text-fuchsia-800 text-2xl font-extrabold">©2023</span></p>
+          <p className="text-lg tracking-wide"><span className="uppercase text-gray-700">Wiktoria Dobrzewinska </span><span className="text-fuchsia-800 text-2xl font-extrabold">©2023</span></p>   
       </div>
     </footer>
   );

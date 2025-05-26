@@ -155,9 +155,9 @@ const ProjectsSection: React.FC = () => {
             data-index={index}
           >
             <div className="w-full lg:w-3/4">
-              <p className="text-left lg:mb-[20px] mb-[10px] lg:text-[25px] text-[23px] font-medium">{project.title}</p>
+              <p className="text-left lg:mb-[20px] mb-[10px] lg:text-[25px] text-[23px] font-semibold lg:font-medium">{project.title}</p>
               {project.description && (
-                <div className="text-left text-[1.3rem] leading-9 relative">
+                <div className="text-left text-[1.3rem] leading-9 relative font-normal">
                   {isMobile ? (
                     <>
                       {expandedDescriptions[index] ? (
@@ -191,7 +191,7 @@ const ProjectsSection: React.FC = () => {
                     href={project.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="project-website text-[15px] lg:text-[17px] flex items-center min-w-[8rem]"
+                    className="project-website text-[15px] lg:text-[17px] flex items-center min-w-[8rem] font-medium"
                   >
                     <GoLink className="mr-2" />
                     Website
@@ -202,7 +202,7 @@ const ProjectsSection: React.FC = () => {
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="project-website text-[14px] lg:text-[17px] flex items-center min-w-[8rem]"
+                    className="project-website text-[14px] lg:text-[17px] flex items-center min-w-[8rem] font-medium"
                   >
                     <GoLink className="text-[14px] lg:text-[17px] mr-2" />
                     Code

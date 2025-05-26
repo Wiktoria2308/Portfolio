@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
     event.preventDefault();
 
     const { target } = event;
-   
+
     if (!(target instanceof HTMLFormElement)) return;
 
     const formData = new FormData(target);
@@ -84,6 +84,9 @@ const ContactForm: React.FC = () => {
         </h2>
         <hr className="border-gray-500 border-t w-1/12 my-1 ml-4" />
       </div>
+      <p className="text-center text-gray-700 text-xl mb-8 max-w-xl mx-auto">
+        Feel free to reach out! If you have any questions or want to collaborate, don’t hesitate to contact me.
+      </p>
       <form
         id="contact-form"
         className="max-w-md mx-auto"
@@ -98,9 +101,8 @@ const ContactForm: React.FC = () => {
             type="text"
             name="user_name"
             id="user_name"
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${
-              errors["user_name"] ? "border-red-500" : ""
-            }`}
+            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["user_name"] ? "border-red-500" : ""
+              }`}
             onChange={handleInputChange}
           />
           {errors["user_name"] && (
@@ -115,9 +117,8 @@ const ContactForm: React.FC = () => {
             type="email"
             name="user_email"
             id="user_email"
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${
-              errors["user_email"] ? "border-red-500" : ""
-            }`}
+            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["user_email"] ? "border-red-500" : ""
+              }`}
             onChange={handleInputChange}
           />
           {errors["user_email"] && (
@@ -132,9 +133,8 @@ const ContactForm: React.FC = () => {
             name="message"
             id="message"
             rows={4}
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${
-              errors["message"] ? "border-red-500" : ""
-            }`}
+            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["message"] ? "border-red-500" : ""
+              }`}
             onChange={handleInputChange}
           ></textarea>
           {errors["message"] && (

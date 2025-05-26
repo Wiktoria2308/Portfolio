@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
       setParagraph(paragraphText);
     }
   }, [isHeading2Finished]);
-  
+
   const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
     const targetId: string | null = event.currentTarget.getAttribute("href");
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             <div className="arrow"></div>
           </a>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
