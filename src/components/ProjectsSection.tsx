@@ -56,10 +56,10 @@ const ProjectsSection: React.FC = () => {
       title: "Tasty Malmö",
       description: (
         <>
-        Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with <strong>React, React Router,</strong> and styled with <strong>Bootstrap</strong>, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the <strong>Google Maps API</strong>, users can view their current location, get directions, and filter results by cuisine, type, or distance. <strong>Firebase</strong> handles authentication and data storage, <strong>Axios</strong> manages API calls, <strong>Dropzone</strong> supports image uploads, and the app is tested using <strong>Testing Library</strong> to ensure reliability.
+        Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with <strong>React, React Router,</strong> and styled with <strong>Bootstrap</strong>, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the <strong>Google Maps API</strong>, users can view their current location, get directions, and filter results by distance. <strong>Firebase</strong> handles authentication and data storage, <strong>Axios</strong> manages API calls, <strong>Dropzone</strong> supports image uploads, and the app is tested using <strong>Testing Library</strong> to ensure reliability.
         </>
       ),
-      descriptionText: "Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with React, React Router, and styled with Bootstrap, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the Google Maps API, users can view their current location, get directions, and filter results by cuisine, type, or distance. Firebase handles authentication and data storage, Axios manages API calls, Dropzone supports image uploads, and the app is tested using Testing Library to ensure reliability.",
+      descriptionText: "Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with React, React Router, and styled with Bootstrap, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the Google Maps API, users can view their current location, get directions, and filter results by distance. Firebase handles authentication and data storage, Axios manages API calls, Dropzone supports image uploads, and the app is tested using Testing Library to ensure reliability.",
       image: "/tasty-malmo.png",
       website: "https://tasty-malmo.netlify.app/",
       code: "https://github.com/Wiktoria2308/Restaurant-Cafe-Map-App",
@@ -157,7 +157,7 @@ const ProjectsSection: React.FC = () => {
             <div className="w-full lg:w-3/4">
               <p className="text-left lg:mb-[20px] mb-[10px] lg:text-[25px] text-[23px] font-semibold lg:font-medium">{project.title}</p>
               {project.description && (
-                <div className="text-left text-[1.3rem] leading-9 relative font-normal">
+                <div className="text-left text-[1.3rem] leading-9 relative font-medium md:font-normal">
                   {isMobile ? (
                     <>
                       {expandedDescriptions[index] ? (

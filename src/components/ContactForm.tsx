@@ -84,7 +84,7 @@ const ContactForm: React.FC = () => {
         </h2>
         <hr className="border-gray-500 border-t w-1/12 my-1 ml-4" />
       </div>
-      <p className="text-center text-gray-700 text-xl mb-8 max-w-xl mx-auto">
+      <p className="text-center text-gray-700 text-xl mb-8 mx-auto max-w-md font-medium">
         Feel free to reach out! If you have any questions or want to collaborate, don’t hesitate to contact me.
       </p>
       <form
