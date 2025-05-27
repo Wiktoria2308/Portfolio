@@ -137,7 +137,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <div
       id="projects-section"
-      className="bg-[#f5f5f5] pt-[5rem] pb-[6rem] px-4 sm:px-6 lg:px-8"
+      className="bg-[#f5f5f5] dark:bg-gray-300 pt-[5rem] pb-[6rem] px-4 sm:px-6 lg:px-8"
     >
       <div className="flex items-center justify-center mb-20">
         <hr className="border-gray-500 border-t w-1/12 my-1 mr-4" />

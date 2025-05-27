@@ -101,7 +101,7 @@ const ContactForm: React.FC = () => {
             type="text"
             name="user_name"
             id="user_name"
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["user_name"] ? "border-red-500" : ""
+            className={`w-full border border-gray-300 dark:border-gray-400 rounded-md p-2 text-lg focus:outline-none dark:bg-gray-300 ${errors["user_name"] ? "border-red-500" : ""
               }`}
             onChange={handleInputChange}
           />
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
             type="email"
             name="user_email"
             id="user_email"
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["user_email"] ? "border-red-500" : ""
+            className={`w-full border border-gray-300 dark:border-gray-400 rounded-md p-2 text-lg focus:outline-none dark:bg-gray-300 ${errors["user_email"] ? "border-red-500" : ""
               }`}
             onChange={handleInputChange}
           />
@@ -133,7 +133,7 @@ const ContactForm: React.FC = () => {
             name="message"
             id="message"
             rows={4}
-            className={`w-full border border-gray-300 rounded-md p-2 text-lg focus:outline-none ${errors["message"] ? "border-red-500" : ""
+            className={`w-full border border-gray-300 dark:border-gray-400 rounded-md p-2 text-lg focus:outline-none dark:bg-gray-300 ${errors["message"] ? "border-red-500" : ""
               }`}
             onChange={handleInputChange}
           ></textarea>

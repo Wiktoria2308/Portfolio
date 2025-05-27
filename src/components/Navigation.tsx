@@ -64,29 +64,52 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`z-10 w-full top-0 fixed ${isScrolled ? "bg-white shadow dark:bg-gray-900" : "bg-transparent"
+      className={`z-10 w-full top-0 fixed ${isScrolled ? "bg-white shadow dark:bg-gray-700" : "bg-transparent"
         }`}
     >
       <div
         className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 ${isMenuOpen && typeof window !== "undefined" && window.innerWidth < 768
-            ? "bg-white dark:bg-gray-900"
-            : ""
+          ? "bg-white dark:bg-gray-900"
+          : ""
           }`}
       >
+
         <Link href="/" className="flex items-center">
-          <img src="/mylogo.png" className="h-14" alt="Logo" />
+          {/* Light mode – zawsze czarne logo */}
+          <img
+            src="/mylogo.png"
+            className="w-10 lg:h-14 block dark:hidden"
+            alt="Logo"
+          />
+
+          {/* Dark mode – dynamicznie zmieniamy logo zależnie od isMenuOpen */}
+          {isMenuOpen || isScrolled ? (
+            <img
+              src="/mylogo_white.png"
+              className="w-10 lg:h-14 hidden dark:block"
+              alt="Logo White"
+            />
+          ) : (
+            <img
+              src="/mylogo.png"
+              className="w-10 lg:h-14 hidden dark:block"
+              alt="Logo Black in Dark Mode"
+            />
+          )}
         </Link>
-        <HamburgerButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+
+
+        <HamburgerButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} isScrolled={isScrolled} />
 
         <div
           className={isMenuOpen ? "block w-full" : "hidden"}
           id="navbar-hamburger"
         >
-          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md text-[1.5rem] dark:text-white">
+          <ul className="ml-auto w-max flex flex-col font-medium mt-4 rounded-md text-[1.5rem]">
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800  dark:text-white dark:opacity-80"
                 aria-current="page"
               >
                 Home
@@ -95,7 +118,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#aboutme"
-                className="block py-2 pl-7 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
+                className="block py-2 pl-7 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800  dark:text-white dark:opacity-80"
                 onClick={handleSmoothScroll}
               >
                 About me
@@ -104,7 +127,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#projects-section"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800  dark:text-white dark:opacity-80"
                 onClick={handleSmoothScroll}
               >
                 Projects
@@ -113,7 +136,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link
                 href="#contact"
-                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800"
+                className="block py-2 pl-3 pr-4 hover:bg-gray-100 text-right dark:hover:bg-gray-800  dark:text-white dark:opacity-80"
                 onClick={handleSmoothScroll}
               >
                 Contact
