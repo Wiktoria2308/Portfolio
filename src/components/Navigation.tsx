@@ -74,7 +74,7 @@ const Navigation: React.FC = () => {
           }`}
       >
         <Link href="/" className="flex items-center">
-          <img src="/logo.png" className="h-10" alt="Logo" />
+          <img src="/mylogo.png" className="h-14" alt="Logo" />
         </Link>
         <HamburgerButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
 
