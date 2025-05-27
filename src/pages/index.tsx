@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Wiktoria's Portfolio</title>
+        <title>Wikweb</title>
         <meta
           name="description"
-          content="Wiktoria Dobrzewinska Portfolio Frontend developer Sweden"
+          content="Wiktoria Dobrzewinska Portfolio Frontend developer Sweden Wikweb"
         />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
