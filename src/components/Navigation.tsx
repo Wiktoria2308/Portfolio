@@ -68,35 +68,35 @@ const Navigation: React.FC = () => {
         }`}
     >
       <div
-        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
+        className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto py-5 px-4 md:px-7 lg:px-0"
       >
 
         <Link href="/" className="flex items-center">
-          {/* Light mode – zawsze czarne logo */}
+          {/* Light mode */}
           <img
             src="/mylogo.png"
-            className="w-10 lg:h-14 block dark:hidden"
+            className="w-10 lg:w-14 block dark:hidden"
             alt="Logo"
           />
 
-          {/* Dark mode – dynamicznie zmieniamy logo zależnie od isMenuOpen */}
+          {/* Dark mode */}
           {isMenuOpen || isScrolled ? (
             <img
               src="/mylogo_white.png"
-              className="w-10 lg:h-14 hidden dark:block"
+              className="w-10 lg:w-14 hidden dark:block"
               alt="Logo White"
             />
           ) : (
             <img
               src="/mylogo.png"
-              className="w-10 lg:h-14 hidden dark:block"
+              className="w-10 lg:w-14 hidden dark:block"
               alt="Logo Black in Dark Mode"
             />
           )}
         </Link>
-
-
+        
         <HamburgerButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} isScrolled={isScrolled} />
+
 
         <div
           className={isMenuOpen ? "block w-full" : "hidden"}
