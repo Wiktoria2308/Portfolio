@@ -64,14 +64,11 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`z-10 w-full top-0 fixed ${isScrolled ? "bg-white shadow dark:bg-gray-700" : "bg-transparent"
+      className={`z-10 w-full top-0 fixed ${isScrolled || isMenuOpen ? "bg-white shadow dark:bg-gray-600" : "bg-transparent"
         }`}
     >
       <div
-        className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 ${isMenuOpen && typeof window !== "undefined" && window.innerWidth < 768
-          ? "bg-white dark:bg-gray-900"
-          : ""
-          }`}
+        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
       >
 
         <Link href="/" className="flex items-center">

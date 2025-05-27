@@ -7,11 +7,11 @@ const ProjectsSection: React.FC = () => {
 
   const [expandedDescriptions, setExpandedDescriptions] = useState<{ [key: number]: boolean }>({});
 
- const getFirstTwoSentencesFromText = (text: string): string => {
-  const sentences = text.match(/[^.!?]+[.!?]+/g);
-  if (!sentences) return text;
-  return sentences.slice(0, 2).join(" ").trim();
-};
+  const getFirstTwoSentencesFromText = (text: string): string => {
+    const sentences = text.match(/[^.!?]+[.!?]+/g);
+    if (!sentences) return text;
+    return sentences.slice(0, 2).join(" ").trim();
+  };
 
   const projects = [
     {
@@ -44,8 +44,8 @@ const ProjectsSection: React.FC = () => {
 
       title: "Movie DB",
       description: (<>
-      Movie Database is a modern web application designed for movie enthusiasts, allowing users to browse, search, and discover detailed information about movies and TV shows. The project is built with <strong>React </strong> for the frontend and uses <strong>React Router</strong> for seamless navigation between pages. Movie data is fetched using <strong>Axios</strong> from an external <strong>Movie API</strong>, while <strong>React Query</strong> efficiently handles data caching and synchronization in real time. The intuitive interface enables users to quickly find their favorite titles, explore detailed descriptions, ratings, and trailers.
-      </> ),
+        Movie Database is a modern web application designed for movie enthusiasts, allowing users to browse, search, and discover detailed information about movies and TV shows. The project is built with <strong>React </strong> for the frontend and uses <strong>React Router</strong> for seamless navigation between pages. Movie data is fetched using <strong>Axios</strong> from an external <strong>Movie API</strong>, while <strong>React Query</strong> efficiently handles data caching and synchronization in real time. The intuitive interface enables users to quickly find their favorite titles, explore detailed descriptions, ratings, and trailers.
+      </>),
       descriptionText: "Movie Database is a modern web application designed for movie enthusiasts, allowing users to browse, search, and discover detailed information about movies and TV shows. The project is built with React for the frontend and uses React Router for seamless navigation between pages. Movie data is fetched using Axios from an external Movie API, while React Query efficiently handles data caching and synchronization in real time. The intuitive interface enables users to quickly find their favorite titles, explore detailed descriptions, ratings, and trailers.",
       image: "/movie-db.png",
       website: "https://wiktoria-movie-db-api.netlify.app/",
@@ -56,7 +56,7 @@ const ProjectsSection: React.FC = () => {
       title: "Tasty Malmö",
       description: (
         <>
-        Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with <strong>React, React Router,</strong> and styled with <strong>Bootstrap</strong>, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the <strong>Google Maps API</strong>, users can view their current location, get directions, and filter results by distance. <strong>Firebase</strong> handles authentication and data storage, <strong>Axios</strong> manages API calls, <strong>Dropzone</strong> supports image uploads, and the app is tested using <strong>Testing Library</strong> to ensure reliability.
+          Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with <strong>React, React Router,</strong> and styled with <strong>Bootstrap</strong>, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the <strong>Google Maps API</strong>, users can view their current location, get directions, and filter results by distance. <strong>Firebase</strong> handles authentication and data storage, <strong>Axios</strong> manages API calls, <strong>Dropzone</strong> supports image uploads, and the app is tested using <strong>Testing Library</strong> to ensure reliability.
         </>
       ),
       descriptionText: "Tasty Malmö is a demo web application featuring fictional restaurants and cafés around Malmö, designed to showcase location-based functionality. Built with React, React Router, and styled with Bootstrap, the app offers smooth navigation and a user-friendly interface. Regular users can log in to suggest new places, while only admins can create, approve, or edit locations. Thanks to the Google Maps API, users can view their current location, get directions, and filter results by distance. Firebase handles authentication and data storage, Axios manages API calls, Dropzone supports image uploads, and the app is tested using Testing Library to ensure reliability.",
@@ -69,7 +69,7 @@ const ProjectsSection: React.FC = () => {
       title: "Almi",
       description: (
         <>
-        This is a custom concept version of the Almi company website, built with vanilla <strong>JavaScript, HTML, and CSS </strong>. The design is inspired by Almi’s official brand identity, using their official colors and graphic elements based on the Almi brand manual. The project focuses on layout, responsiveness, and brand-consistent styling without the use of frameworks or libraries.
+          This is a custom concept version of the Almi company website, built with vanilla <strong>JavaScript, HTML, and CSS </strong>. The design is inspired by Almi’s official brand identity, using their official colors and graphic elements based on the Almi brand manual. The project focuses on layout, responsiveness, and brand-consistent styling without the use of frameworks or libraries.
         </>
       ),
       descriptionText: "This is a custom concept version of the Almi company website, built with vanilla JavaScript, HTML, and CSS. The design is inspired by Almi’s official brand identity, using their official colors and graphic elements based on the Almi brand manual. The project focuses on layout, responsiveness, and brand-consistent styling without the use of frameworks or libraries.",
@@ -154,7 +154,7 @@ const ProjectsSection: React.FC = () => {
             className="project-container w-full"
             data-index={index}
           >
-            <div className="w-full lg:w-3/4">
+            <div className="w-full md:w-3/4">
               <p className="text-left lg:mb-[20px] mb-[10px] lg:text-[25px] text-[23px] font-semibold lg:font-medium">{project.title}</p>
               {project.description && (
                 <div className="text-left text-[1.3rem] leading-9 relative font-medium md:font-normal">
@@ -219,7 +219,7 @@ const ProjectsSection: React.FC = () => {
             </div>
 
             <div
-              className="lg:w-3/4 project-image"
+              className="md:w-3/4 project-image"
               onMouseOver={() => !isMobile && handleMouseOver(index)}
               onMouseLeave={() => !isMobile && handleMouseLeave()}
               onClick={() => isMobile && setHoveredIndex(hoveredIndex === index ? null : index)}
@@ -242,6 +242,12 @@ const ProjectsSection: React.FC = () => {
         <a href="https://github.com/Wiktoria2308" target="_blank" className="text-2xl underline pointer">
           More Projects{" "}
         </a>
+      </div>
+
+      <div className="text-center mt-24 md:w-3/4 mx-auto">
+        <div className="my-8 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent dark:via-gray-600" />
+
+        <p className="text-left text-[1.3rem] leading-9 relative font-medium md:font-normal"><strong>This website</strong> was built using modern web development technologies such as <strong>Next.js, React, TypeScript, and Tailwind CSS </strong>. It is fully responsive, ensuring an optimal user experience across all devices, from desktops to mobile phones. The site features a <strong>dark mode</strong> for improved accessibility and visual comfort, and includes various smooth <strong>animations</strong> to enhance interactivity and user engagement. The design is clean and minimalistic, with a strong focus on usability and performance.</p>
       </div>
     </div>
   );
